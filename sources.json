@@ -1,9 +1,9 @@
 {
-  "version": "1.1.20",
+  "version": "1.1.21",
   "hashes": {
-    "anchal-1.1.20-linux-arm64.tar.gz": "sha256-6jDhgLykHPQmBsRdw3eqlN7/1UPBZaKK14NQaBhorvw=",
-    "anchal-1.1.20-linux-x64.tar.gz": "sha256-B9j8Axs9V2e/osiGmmp7Pn2n/doIFwhQJ1+G1/Rp+dM=",
-    "anchald-1.1.20-server-amd64.gz": "sha256-FIvul1t8LvrYW3asb327lR6JOPMncWd8zl+4C2cNFlE=",
-    "anchald-1.1.20-server-arm64.gz": "sha256-U9DgurH2uXkp60Mm1TwP94NSPA68nQBbe4tm8qsz/Ds="
+    "anchal-1.1.21-linux-arm64.tar.gz": "sha256-ZSOO7/O6/yINaSPDc6NiNveoMrkQ5MBX9stxTOrmqSg=",
+    "anchal-1.1.21-linux-x64.tar.gz": "sha256-M1NQt3td5q54mP0m6qALTzqioORZ8px2ejGRhGlDwMQ=",
+    "anchald-1.1.21-server-amd64.gz": "sha256-FqH8Ic9+69OAlZGtKxKJWqI+ZrUSdfkWk7aM0zhUBas=",
+    "anchald-1.1.21-server-arm64.gz": "sha256-UUPnGL5KOtFoi/kIUz1y0mu27UUh/eKKKNoyeKx7Dpw="
   }
 }
