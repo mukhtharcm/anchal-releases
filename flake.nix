@@ -42,7 +42,8 @@
           # Flutter opens EGL at run time; libglvnd finds the machine's driver.
           runtimeDependencies = [ pkgs.libGL ];
           # pactl, parec and pacat for calls and voice notes, notify-send for
-          # notifications, xdg-open for links and files.
+          # notifications, xdg-open for links and files, fc-match to find the
+          # system's fonts on ARM, where Flutter cannot.
           installPhase = ''
             runHook preInstall
             mkdir -p $out/lib/anchal $out/bin $out/share/icons/hicolor/512x512/apps
@@ -52,7 +53,7 @@
             # bundle's $ORIGIN found before autoPatchelf rewrote the paths.
             makeWrapper $out/lib/anchal/anchal $out/bin/anchal \
               --prefix LD_LIBRARY_PATH : $out/lib/anchal/lib \
-              --prefix PATH : ${pkgs.lib.makeBinPath (with pkgs; [ pulseaudio libnotify xdg-utils dbus ])} \
+              --prefix PATH : ${pkgs.lib.makeBinPath (with pkgs; [ pulseaudio libnotify xdg-utils dbus fontconfig ])} \
               --prefix XDG_DATA_DIRS : ${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}:${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}
             runHook postInstall
           '';
